@@ -1,0 +1,28 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.filterInput {
+  padding: 5px 20px;
+  min-width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.237);
+  line-height: 1.5;
+  border-radius: 20px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  background: linear-gradient(0deg, rgba(71, 71, 71, 0.24), transparent 90%);
+  outline: none;
+  background-color: transparent;
+}
+
+.filterInput::placeholder {
+  letter-spacing: 1.3px;
+  color: rgba(4, 0, 52, 0.308);
+}

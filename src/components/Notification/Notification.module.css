@@ -1,0 +1,7 @@
+.notification {
+  text-align: center;
+}
+
+.notification p:first-child {
+  font-weight: 600;
+}

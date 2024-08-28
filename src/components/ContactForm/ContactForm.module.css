@@ -1,0 +1,105 @@
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 40px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 16px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  padding: 0 5px;
+  font-size: 14px;
+  background-color: #e6ecfa;
+  color: grey;
+  transform: translateY(0);
+  transition: transform 200ms ease-in;
+}
+
+.fieldContainer:is(:hover, :focus) .label,
+.label.active {
+  transform: translateY(-23px);
+}
+
+.field {
+  padding: 10px 0;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  outline: none;
+  background-color: transparent;
+}
+
+.field.success {
+  background: linear-gradient(0deg, rgba(126, 229, 62, 0.24), transparent 20%);
+}
+
+.field.error {
+  background: linear-gradient(0deg, rgba(237, 60, 60, 0.24), transparent 20%);
+  border: none;
+}
+
+.errorMsg {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  font-size: 12px;
+  color: rgba(255, 0, 0, 0.622);
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: none;
+  background-color: #5d8dff4c;
+  border-radius: 10px;
+  margin: 10px 20px;
+
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: color, 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #8aacf48d, #365e9d7e, #2f45a4, #0b238f);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  border: transparent;
+}
+
+.btn:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}

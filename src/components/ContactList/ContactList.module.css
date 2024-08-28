@@ -1,0 +1,59 @@
+.contactsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contactCard {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 3px rgba(128, 128, 128, 0.867);
+  background-color: rgba(215, 215, 215, 0.608);
+  transition: background-color, box-shadow 250ms ease-in;
+}
+
+@media (min-width: 468px) {
+  .contactsContainer {
+    gap: 10px;
+  }
+
+  .contactCard {
+    max-width: calc((100% - 20px * 1) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .contactsContainer {
+    gap: 15px;
+  }
+
+  .contactCard {
+    max-width: calc((100% - 15px * 2) / 3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactsContainer {
+    gap: 20px;
+  }
+
+  .contactCard {
+    max-width: calc((100% - 20px * 3) / 4);
+  }
+}
+
+.contactCard:is(:hover, :focus) {
+  box-shadow: 1px 1px 8px 3px rgba(255, 255, 118, 0.421);
+  background-color: rgba(0, 60, 255, 0.129);
+}
