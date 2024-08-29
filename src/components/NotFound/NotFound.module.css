@@ -1,0 +1,11 @@
+.emptyContainer {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notFoundValue {
+  font-weight: 600;
+  color: rgb(91, 188, 12);
+}

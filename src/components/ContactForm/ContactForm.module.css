@@ -38,6 +38,7 @@
 }
 
 .field {
+  width: 100%;
   padding: 10px 0;
   font-weight: 500;
   border: none;
@@ -61,45 +62,4 @@
   right: 0;
   font-size: 12px;
   color: rgba(255, 0, 0, 0.622);
-}
-
-.btn {
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-  position: relative;
-  padding: 15px 30px;
-  border: none;
-  background-color: #5d8dff4c;
-  border-radius: 10px;
-  margin: 10px 20px;
-
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: color, 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.btn:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 0;
-  width: 100%;
-  z-index: -1;
-  color: white;
-  background: linear-gradient(180deg, #8aacf48d, #365e9d7e, #2f45a4, #0b238f);
-  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.btn:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0);
-  border: transparent;
-}
-
-.btn:hover:before {
-  bottom: 0%;
-  top: auto;
-  height: 100%;
 }
